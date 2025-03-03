@@ -1,17 +1,26 @@
 :root{
+    --subtitle-font-size: 18px;
+    --subtitle-line-height: 27px;
+
     --header__font-size: 20px; 
     --header__status-color-default: #2C2D35;
     --header__status-color-hover: #598D66; 
     --header__status-color-active: #376B44;
-
     --header__status-bgclr-focus: #D4E8D9;
-
     --header__line-height: 23px;
+
+    --hero__status-color-hover: #F4F6F5;
+    --hero__status-bgclr-hover: #598D66;
+    --hero__status-color-focus: #598D66;
+    --hero__status-bgclr-focus: #D4E8D9;
+    --hero__status-color-active: #fff;
+    --hero__status-bgclr-active: #376B44;
 }
 body{
     font-family: "Raleway", serif;
     font-weight: 500;
 }
+
 .header{
     width: 100%;
     height: 100px;
@@ -60,6 +69,7 @@ body{
     line-height: var(--header__line-height);
     color: var(--header__status-color-default);
     text-align: center;
+    cursor: pointer;
 }
 .header__nav-item:hover{
     color: var(--header__status-color-hover);
@@ -83,4 +93,77 @@ body{
     object-fit: cover;
     width: 22px;
     height: 22px;
+}
+
+
+/*
+    HERO
+    SECTION
+
+*/
+
+.hero{
+    width: 100%;
+    height: 620px;
+}
+.hero__garden{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.hero__image-wrapper{
+    width: 540px;
+    height: 621px;
+}
+.hero__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero__about-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+.hero__title{
+    width: 100%;
+    font-size: 60px;
+    line-height: 66px;
+    color: #2C2D35;
+    margin-top: 145px;
+}
+.title__decoration{
+    color: #598D66;
+    font-size: 60px;
+    line-height: 66px;
+}
+.hero__subtitle{
+    width: 100%;
+    color: #86928B;
+    margin-top: 20px;
+    font-size: var(--subtitle-font-size);
+    line-height: var(--subtitle-line-height);
+}
+.hero__button{
+    width: 227px;
+    height: 65px;
+    padding: 20px 60px;
+    border: 1px solid #598D66;
+    font-size: 20px;
+    line-height: 23px;
+    color: #598D66;
+    text-align: center;
+    margin-top: 60px;
+}
+.hero__button:hover{
+    background-color: var(--hero__status-bgclr-hover);
+    color: var(--hero__status-color-hover);
+}
+.hero__button:focus{
+    background-color: var(--hero__status-bgclr-focus);
+    color: var(--hero__status-color-focus);
+}
+.hero__button:active{
+    background-color: var(--hero__status-bgclr-active);
+    color: var(--hero__status-color-active);
 }
