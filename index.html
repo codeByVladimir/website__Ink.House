@@ -33,13 +33,31 @@
         </div>
         <div class="header__burger-menu">
             <div class="container">
-                <div class="header__flex-adaptive">
-                    <button class="header__burger-btn">
-                        <!-- burger menu list -->
+                <div class="header__adaptive-nav">
+                    <button class="header__open-popup">
                     </button>
                     <button class="header__button-card">
                         <img class="header__cart" src="img/cart.svg" alt="Корзина">
                     </button>
+                    <div class="header__popup js-close">
+                        <div class="header__popup-content">
+                            <a class="header__logo popup__logo" href="#">
+                                <img src="./img/star-logo.svg" srcset="./img/star__logo-phone.svg 450w" class="header__logo-img" alt="Логотип">
+                                <h1 class="header__logo-title popup-title">Ink. House</h1>
+                            </a>
+                            <button class="header__close-popup">
+                                <img class="header__close-popup-img" src="./img/close-popup.svg" alt="Закрыть окно">
+                            </button>
+                        
+                            <nav class="header__popup-nav">
+                                <ul class="header__nav-list popup__list">
+                                    <li class="header__nav-item">Репродукции</li>
+                                    <li class="header__nav-item">Новинки</li>
+                                    <li class="header__nav-item">О нас</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,6 +78,19 @@
                 </div>
             </div>
         </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__title-wrapper">
+                    <h2 class="products__title">Репродукции</h2>
+                    <nav class="products__navigation">
+                        <button class="products__button-nav">Франция</button>
+                        <button class="products__button-nav">Германия</button>
+                        <button class="products__button-nav">Англия</button>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
