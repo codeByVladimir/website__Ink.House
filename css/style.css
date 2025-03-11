@@ -27,6 +27,18 @@
     --hero__status-color-active: #fff;
     --hero__status-bgclr-active: #376B44;
 
+    --author--font-size: 18px;
+    --author--line-height: 100%;
+    --author--color: #86928B;
+
+    --reproduction--subtitle-color: #2C2D35;
+    --reproduction--font-size: 30px;
+    --reproduction--line-height: 100%;
+    --reproduction--color: #2C2D35;
+
+    --price-font-size: 24px;
+    --price-line-height: 100%;
+    --price-color: #598D66;
 }
 body{
     font-family: "Raleway", serif;
@@ -447,28 +459,28 @@ body{
 
 
 
-.products{
+.reproduction{
     width: 100%;
     min-height: 1564px;
     margin-top: 69px;
 }
-.products__title-wrapper{
+.reproduction__title-wrapper{
     display: flex;
     justify-content: space-between;
     width: 100%;
     min-height: 44px;
 }
-.products__title{
+.reproduction__title{
     font-size: 40px;
     line-height: 100%;
     color: #2C2D35;
 }
-.products__navigation{
+.reproduction__navigation{
     display: flex;
     justify-content: space-between;
     column-gap: 32px;
 }
-.products__button-nav{
+.reproduction__button-nav{
     min-width: 108px;
     font-size: 20px;
     line-height: 100%;
@@ -477,4 +489,55 @@ body{
     background-color: #376B44;
     border: none;
     cursor: pointer;
+}
+.reproduction__list-France{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.reproduction__product-card{
+    width: 350px;
+    min-height: 730px;
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+}
+.reproduction__img{
+    min-width: 310px;
+    min-height: 422px;
+}
+.reproduction__author{
+    font-size: var(--author--font-size);
+    line-height: var(--author--line-height);
+    color: var(--author--color);
+    margin-top: 20px;
+}
+.reproduction__name{
+    font-size: var(--reproduction--font-size);
+    line-height: var(--reproduction--line-height);
+    color: var(--reproduction--color);
+    margin-top: 10px;
+}
+.reproduction__subtitle{
+    font-size: var(--author--font-size);
+    line-height: var(--author--line-height);
+    color: var(--reproduction--subtitle-color);
+    margin-top: 8px;
+}
+.reproduction__price-item{
+    font-size: var(--price-font-size);
+    line-height: var(--price-line-height);
+    color: var(--price-color);
+    margin-top: 30px;
+}
+.reproduction__add-to-shopping-card{
+    padding: 20px 60px;
+    border: 1px solid #598D66;
+    background-color: #E1EDE6;
+    color: #598D66;
+    font-size: 20px;
+    line-height: 100%;
+    margin-top: 20px;
+    width: 100%;
+
 }
