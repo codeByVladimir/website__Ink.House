@@ -484,18 +484,24 @@ body{
     min-width: 108px;
     font-size: 20px;
     line-height: 100%;
-    color: #F4F6F5;
+    color: #2C2D35;
     border-radius: 20px;
-    background-color: #376B44;
+    background-color: #D4E8D9;
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
 }
-.reproduction__list-France{
+.active{
+    color: #F4F6F5;
+    background-color: #376B44;
+}
+.reproduction__list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
+
 .reproduction__product-card{
     width: 350px;
     min-height: 730px;

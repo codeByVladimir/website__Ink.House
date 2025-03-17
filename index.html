@@ -83,85 +83,163 @@
                 <div class="reproduction__title-wrapper">
                     <h2 class="reproduction__title">Репродукции</h2>
                     <nav class="reproduction__navigation">
-                        <button class="reproduction__button-nav">Франция</button>
-                        <button class="reproduction__button-nav">Германия</button>
-                        <button class="reproduction__button-nav">Англия</button>
+                        <button data-id="France" class="reproduction__button-nav js-France active">Франция</button>
+                        <button data-id="Germany" class="reproduction__button-nav js-Germany">Германия</button>
+                        <button data-id="England" class="reproduction__button-nav js-England">Англия</button>
                     </nav>
                 </div>
-                <ul class="reproduction__list-France">
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Охота-Амура.jpg" alt="Картина Охота Амура">
-                                <figcaption class="reproduction__author">Марсель Руссо</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Охота Амура</h3>
-                            <p class="reproduction__subtitle">Холст, масло (50х80) </p>
-                            <p class="reproduction__price-item">14 500 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Дама с собачкой.jpg" alt="Картина Дама с собачкой">
-                                <figcaption class="reproduction__author">Анри Селин</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Дама с собачкой</h3>
-                            <p class="reproduction__subtitle">Акрил, бумага (50х80) </p>
-                            <p class="reproduction__price-item">16 500 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Процедура.jpg" alt="Картина Процедура">
-                                <figcaption class="reproduction__author">Франсуа Дюпон</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Процедура</h3>
-                            <p class="reproduction__subtitle">Цветная литография (40х60) </p>
-                            <p class="reproduction__price-item">20 000 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Роза.jpg" alt="Картина Роза">
-                                <figcaption class="reproduction__author">Луи Детуш</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Роза</h3>
-                            <p class="reproduction__subtitle">Бумага, акрил (50х80) </p>
-                            <p class="reproduction__price-item">12 000 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Птичья трапеза.jpg" alt="Картина Птичья трапеза">
-                                <figcaption class="reproduction__author">Франсуа Дюпон</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Птичья трапеза</h3>
-                            <p class="reproduction__subtitle">Цветная литография (40х60) </p>
-                            <p class="reproduction__price-item">22 500 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                    <li class="reproduction__list-item">
-                        <div class="reproduction__product-card">
-                            <figure class="reproduction__img-wrapper">
-                                <img class="reproduction__img" src="./img/item-cards/France/Пейзаж с рыбой.jpg" alt="Картина Пейзаж с рыбой">
-                                <figcaption class="reproduction__author">Пьер Моранж</figcaption>
-                            </figure>
-                            <h3 class="reproduction__name">Пейзаж с рыбой</h3>
-                            <p class="reproduction__subtitle">Цветная литография (40х60) </p>
-                            <p class="reproduction__price-item">20 000 руб</p>
-                            <button class="reproduction__add-to-shopping-card">В корзину</button>
-                        </div>
-                    </li>
-                </ul>
+                <div data-id="France" class="reproduction__list-wrapper">
+                    <ul class="reproduction__list">
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Охота-Амура.jpg" alt="Картина Охота Амура">
+                                    <figcaption class="reproduction__author">Марсель Руссо</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Охота Амура</h3>
+                                <p class="reproduction__subtitle">Холст, масло (50х80) </p>
+                                <p class="reproduction__price-item">14 500 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Дама с собачкой.jpg" alt="Картина Дама с собачкой">
+                                    <figcaption class="reproduction__author">Анри Селин</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Дама с собачкой</h3>
+                                <p class="reproduction__subtitle">Акрил, бумага (50х80) </p>
+                                <p class="reproduction__price-item">16 500 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Процедура.jpg" alt="Картина Процедура">
+                                    <figcaption class="reproduction__author">Франсуа Дюпон</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Процедура</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">20 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Роза.jpg" alt="Картина Роза">
+                                    <figcaption class="reproduction__author">Луи Детуш</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Роза</h3>
+                                <p class="reproduction__subtitle">Бумага, акрил (50х80) </p>
+                                <p class="reproduction__price-item">12 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Птичья трапеза.jpg" alt="Картина Птичья трапеза">
+                                    <figcaption class="reproduction__author">Франсуа Дюпон</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Птичья трапеза</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">22 500 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/France/Пейзаж с рыбой.jpg" alt="Картина Пейзаж с рыбой">
+                                    <figcaption class="reproduction__author">Пьер Моранж</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Пейзаж с рыбой</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">20 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div data-id="Germany" class="reproduction__list-wrapper">
+                    <ul class="reproduction__list">
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Над городом.jpg" alt="Картина Над городом">
+                                    <figcaption class="reproduction__author">Курт Вернер</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Над городом</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">16 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Птенцы.jpg" alt="Картина Птенцы">
+                                    <figcaption class="reproduction__author">Макс Рихтер</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Птенцы</h3>
+                                <p class="reproduction__subtitle">Холст, масло (50х80) </p>
+                                <p class="reproduction__price-item">14 500 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Среди листьев.jpg" alt="Картина Среди листьев">
+                                    <figcaption class="reproduction__author">Мартин Майер</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Среди листьев</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">20 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Яркая птица.jpg" alt="Картина Яркая птица">
+                                    <figcaption class="reproduction__author">Герман Беккер</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Яркая птица</h3>
+                                <p class="reproduction__subtitle">Цветная литография (40х60) </p>
+                                <p class="reproduction__price-item">13 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Дятлы.jpg" alt="Картина Дятлы">
+                                    <figcaption class="reproduction__author">Вульф Бауэр</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Дятлы</h3>
+                                <p class="reproduction__subtitle">Бумага, акрил (50х80) </p>
+                                <p class="reproduction__price-item">20 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                        <li class="reproduction__list-item">
+                            <div class="reproduction__product-card">
+                                <figure class="reproduction__img-wrapper">
+                                    <img class="reproduction__img" src="./img/item-cards/Germany/Большие воды.jpg" alt="Картина Большие воды">
+                                    <figcaption class="reproduction__author">Вальтер Хартманн</figcaption>
+                                </figure>
+                                <h3 class="reproduction__name">Большие воды</h3>
+                                <p class="reproduction__subtitle">Бумага, акрил (50х80) </p>
+                                <p class="reproduction__price-item">23 000 руб</p>
+                                <button class="reproduction__add-to-shopping-card">В корзину</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
