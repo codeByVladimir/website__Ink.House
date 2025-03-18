@@ -491,6 +491,13 @@ body{
     cursor: pointer;
     padding: 10px 20px;
 }
+.reproduction__button-nav:hover{
+    background-color: #D4E8D9;
+    border: 2px solid #598D66;
+}
+.reproduction__button-nav:focus{
+    background-color: #376B44
+}
 .active{
     color: #F4F6F5;
     background-color: #376B44;
@@ -545,5 +552,14 @@ body{
     line-height: 100%;
     margin-top: 20px;
     width: 100%;
-
+    cursor: pointer;
+}
+.reproduction__add-to-shopping-card:hover{
+    background-color: #598D66;
+    color: #F4F6F5;
+}
+.reproduction__add-to-shopping-card:focus{
+    background-color: #D4E8D9;
+    border: 1px solid #598D66;
+    color: #598D66;
 }

@@ -12,7 +12,7 @@ closePopupBtnNode.addEventListener('click', () => {
 
 //  секция репродукция / переключение контента
 
-const getBtnNodes = document.querySelectorAll('.js-France, .js-Germany, .js-England');
+const getBtnNodes = document.querySelectorAll('.reproduction__button-nav');
 const getContentNodes = document.querySelectorAll('.reproduction__list-wrapper');
 
 getBtnNodes.forEach(function(btn){
@@ -22,6 +22,7 @@ getBtnNodes.forEach(function(btn){
             b.classList.remove('active');
             
         })
+        btn.classList.add('active');
         getContentNodes.forEach(content => {
             content.hidden = true;
             const contentId = document.querySelector(`.reproduction__list-wrapper[data-id="${id}"]`);
@@ -29,7 +30,6 @@ getBtnNodes.forEach(function(btn){
                 contentId.hidden = false;
             }
         });
-        btn.classList.add('active');
     })
 })
 
