@@ -16,14 +16,20 @@
         <div class="container">
             <div class="header__wrapper">
                 <a class="header__logo" href="#">
-                    <img src="./img/icons/star-logo.svg" srcset="./img/icons/star__logo-phone.svg 450w" class="header__logo-img" alt="Логотип">
+                    <img class="header__logo-img" src="./img/icons/star-logo.svg" srcset="./img/icons/star__logo-phone.svg 450w" alt="Логотип">
                     <h1 class="header__logo-title">Ink. House</h1>
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item">Репродукции</li>
-                        <li class="header__nav-item">Новинки</li>
-                        <li class="header__nav-item">О нас</li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#new">Репродукции</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Новинки</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">О нас</a>
+                        </li>
                     </ul>
                     <button class="header__button-card">
                         <img class="header__cart" src="img/icons/cart.svg" alt="Корзина">
@@ -51,9 +57,15 @@
                         
                             <nav class="header__popup-nav">
                                 <ul class="header__nav-list popup__list">
-                                    <li class="header__nav-item">Репродукции</li>
-                                    <li class="header__nav-item">Новинки</li>
-                                    <li class="header__nav-item">О нас</li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#new">Репродукции</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#">Новинки</a>
+                                    </li>
+                                    <li class="header__nav-item">
+                                        <a class="header__nav-link" href="#">О нас</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -73,7 +85,7 @@
                     <div class="hero__about-wrapper">
                         <h1 class="hero__title">Реплики картин от <span class="title__decoration">Ink. House</span></h1>
                         <h2 class="hero__subtitle">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</h2>
-                        <a  class="hero__button" href="#">Продукция</a>
+                        <a  class="hero__button" href="#new">Продукция</a>
                     </div>
                 </div>
             </div>
@@ -81,11 +93,11 @@
         <section class="reproduction">
             <div class="container">
                 <div class="reproduction__title-wrapper">
-                    <h2 class="reproduction__title">Репродукции</h2>
+                    <h2 id="new" class="reproduction__title">Репродукции</h2>
                     <nav class="reproduction__navigation">
-                        <button data-id="France" class="reproduction__button-nav active">Франция</button>
-                        <button data-id="Germany" class="reproduction__button-nav">Германия</button>
-                        <button data-id="England" class="reproduction__button-nav">Англия</button>
+                        <button id="France" data-id="France" class="reproduction__button-nav active">Франция</button>
+                        <button id="Germany" data-id="Germany" class="reproduction__button-nav">Германия</button>
+                        <button id="England" data-id="England" class="reproduction__button-nav">Англия</button>
                     </nav>
                 </div>
                 <div data-id="France" class="reproduction__list-wrapper">
@@ -332,10 +344,87 @@
                     граница обучения кадров предопределяет высокую востребованность 
                     направлений прогрессивного развития.
                 </p>
-                <a class="new-collection__link" href="#">Ознакомиться</a>
+                <a class="new-collection__link" href="#new">Ознакомиться</a>
+            </div>
+        </section>
+
+        <section class="our-team">
+            <div class="container">
+                <div class="our-team__wrapper">
+                    <div class="our-team__img-wrapper">
+                        <img class="our-team__image" src="./img/icons/our-team__logo.png" alt="Картинка">
+                    </div>
+                    <div class="our-team__content-wrapper">
+                        <h3 class="our-team__title">Наша команда</h3>
+                        <p class="our-team__subtitle">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
+                        <div class="our-team__icons-wrapper">
+                            <img class="our-team__icons-people" src="./img/icons/Ellipse 30.png" alt="Наша команда">
+                            <img class="our-team__icons-people" src="./img/icons/Ellipse 31.png" alt="Наша команда">
+                            <img class="our-team__icons-people" src="./img/icons/Ellipse 32.png" alt="Наша команда">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="flex">
+                <div class="footer__left-wrapper">
+                    <a class="footer__logo" href="#">
+                        <img class="footer__logo-img" src="./img/icons/star-logo.svg" srcset="./img/icons/star__logo-phone.svg 450w" alt="Логотип">
+                        <h1 class="footer__logo-title">Ink. House</h1>
+                    </a>
+                    <a class="footer__phone" href="tel:+7 (999) 543-54-54">+7 (999) 543-54-54</a>
+                    <p class="footer__phone-description">Мастерская</p>
+                </div>
+                <div class="footer__center-wrapper">
+                    <div class="footer__list-wrapper">
+                        <h4 class="footer__title">Репродукции</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-text" href="#France">Франция</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-text" href="#Germany">Германия</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-text" href="#England">Англия</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list-wrapper">
+                        <h4 class="footer__title">Новинки</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">2024</li>
+                            <li class="footer__list-item">2025</li>
+                        </ul>
+                    </div>
+                    <div class="footer__list-wrapper">
+                        <h4 class="footer__title">О нас</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Художники</li>
+                            <li class="footer__list-item">Менеджеры</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right-wrapper">
+                    <div class="footer__social-icons">
+                        <a class="footer__icons-link" href="#">
+                            <img class="footer__icons-img" src="./img/icons/facebook.svg" alt="Наш Фейсбук">
+                        </a>
+                        <a class="footer__icons-link" href="#">
+                            <img class="footer__icons-img" src="./img/icons/instagram.svg" alt="Наш Инстаграм">
+                        </a>
+                        <a class="footer__icons-link" href="#">
+                            <img class="footer__icons-img" src="./img/icons/youtube.svg" alt="Наш Ютуб">
+                        </a>
+                    </div>
+                    <p class="footer__copyright">Ink. House ®<br>All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
