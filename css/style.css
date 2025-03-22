@@ -507,22 +507,25 @@ body{
     color: #F4F6F5;
     background-color: #376B44;
 }
+.reproduction__list-wrapper{
+    margin-top: 30px;
+}
 .reproduction__list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 30px;
-    margin-top: 30px;
 }
 
 .reproduction__product-card{
-    width: 350px;
+    max-width: 350px;
     min-height: 730px;
     padding: 20px 20px 30px 20px;
     background-color: #E1EDE6;
 }
 .reproduction__img{
-    min-width: 310px;
+    max-width: 310px;
     min-height: 422px;
+    object-fit: cover;
 }
 .reproduction__author{
     font-size: var(--author--font-size);
@@ -569,6 +572,86 @@ body{
     color: #598D66;
 }
 
+@media (max-width: 768px) {
+    .reproduction{
+        min-height: 2323px;
+        margin-top: 75px;
+    }
+    .reproduction__title-wrapper{
+        min-height: 43px;
+    }
+    .reproduction__title{
+        font-size: 30px;
+        line-height: 110%;
+    }
+    .reproduction__product-card{
+        max-width: 330px;
+    }
+    .reproduction__img{
+        max-width: 290px;
+    }
+}
+@media (max-width: 576px){
+    .reproduction{
+        min-height: 1709px;
+        margin-top: 50px;
+    }
+    .reproduction__title-wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 408px;
+        max-height: 87px;
+    }
+    .reproduction__title{
+        font-size: 24px;
+    }
+    .reproduction__button-nav{
+        min-width: 101px;
+        font-size: 18px;
+    }
+    .reproduction__list-wrapper{
+        margin-top: 20px;
+    }
+    .reproduction__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 30px;
+    }
+    .reproduction__product-card{
+        max-width: 240px;
+        min-height: 514px;
+    }
+    .reproduction__img{
+        max-width: 200px;
+        min-height: 250px;
+    }
+    .reproduction__author{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .reproduction__name{
+        font-size: 23px;
+        line-height: 100%;
+    }
+    .reproduction__subtitle{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .reproduction__price-item{
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .reproduction__add-to-shopping-card{
+        padding: 14px 56px;
+        font-size: 18px;
+        line-height: 100%;
+        margin-top: 10px;
+    }
+    .margin__price{
+        margin-top: 15px;
+    }
+}
 
 
 /* section 
@@ -785,4 +868,8 @@ body{
     color: #86928B;
     font-size: 12px;
     line-height: 120%;
+}
+
+@media (max-width: 768px) {
+    
 }
