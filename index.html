@@ -13,64 +13,67 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a class="header__logo" href="#">
-                    <img class="header__logo-img" src="./img/icons/star-logo.svg" srcset="./img/icons/star__logo-phone.svg 450w" alt="Логотип">
-                    <h1 class="header__logo-title">Ink. House</h1>
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#new">Репродукции</a>
+
+        <div class="desktop-tablet">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="./img/icons/star-logo.svg" alt="Логотип">
+                        <h1 class="header__title">Ink. House</h1>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#"></a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Новинки</a>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#"></a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">О нас</a>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#"></a>
+                        </li>
+                        <li class="header__list-item">
+                            <button class="header__card-btn">
+                                <img class="header__card--img" src="./img/icons/cart.svg" alt="Корзина">
+                            </button>
                         </li>
                     </ul>
-                    <button class="header__button-card">
-                        <img class="header__cart" src="img/icons/cart.svg" alt="Корзина">
-                    </button>
-                </nav>
+                </div>
             </div>
         </div>
-        <div class="header__burger-menu">
+
+        <div class="mobile">
             <div class="container">
-                <div class="header__adaptive-nav">
-                    <button class="header__open-popup">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="./img/icons/star-logo.svg" alt="Логотип">
+                    <h1 class="header__title">Ink. House</h1>
+                </div>
+                <div class="header__wrapper">
+                    <button class="header__burger">
+                        <img class="header__burger--img" src="./img/icons/burger.svg" alt="Бургер-меню">
                     </button>
-                    <button class="header__button-card">
-                        <img class="header__cart" src="img/icons/cart.svg" alt="Корзина">
+                    <button class="header__card">
+                        <img class="header__card--img" src="./img/icons/cart.svg" alt="Корзина">
                     </button>
-                    <div class="header__popup js-close">
-                        <div class="header__popup-content">
-                            <a class="header__logo popup__logo" href="#">
-                                <img src="./img/icons/star-logo.svg" srcset="./img/icons/star__logo-phone.svg 450w" class="header__logo-img" alt="Логотип">
-                                <h1 class="header__logo-title popup-title">Ink. House</h1>
-                            </a>
-                            <button class="header__close-popup">
-                                <img class="header__close-popup-img" src="./img/icons/close-popup.svg" alt="Закрыть окно">
-                            </button>
-                        
-                            <nav class="header__popup-nav">
-                                <ul class="header__nav-list popup__list">
-                                    <li class="header__nav-item">
-                                        <a class="header__nav-link" href="#new">Репродукции</a>
-                                    </li>
-                                    <li class="header__nav-item">
-                                        <a class="header__nav-link" href="#">Новинки</a>
-                                    </li>
-                                    <li class="header__nav-item">
-                                        <a class="header__nav-link" href="#">О нас</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                </div>
+                <div class="header__popup">
+                    <div class="header__popup-content">
+                        <button class="header__popup-close">
+                            <img class="header__popup-close-img" src="./img/icons/close-popup.svg" alt="Закрыть бургер-меню">
+                        </button>
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#"></a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#"></a>
+                            </li>
+                            <li class="header__list-item">
+                                <a class="header__list-link" href="#"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
