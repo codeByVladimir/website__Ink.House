@@ -1,15 +1,13 @@
-const openPopupBtnNode = document.querySelector('.header__open-popup');
-const closePopupBtnNode = document.querySelector('.header__close-popup');
-const togglePopupNode = document.querySelector('.header__popup');
+const burgerOpenNode = document.querySelector('.header__burger');
+const burgerCloseNode = document.querySelector('.header__popup-close');
+const popupNode = document.querySelector('.header__popup');
 
-openPopupBtnNode.addEventListener('click', () => {
-    togglePopupNode.classList.toggle('js-close');
+burgerOpenNode.addEventListener('click', () => {
+    popupNode.classList.add('js-open__popup');
 });
-
-closePopupBtnNode.addEventListener('click', () => {
-    togglePopupNode.classList.toggle('js-close');
-})
-
+burgerCloseNode.addEventListener('click', () => {
+    popupNode.classList.remove('js-open__popup');
+});
 //  секция репродукция / переключение контента
 
 const getBtnNodes = document.querySelectorAll('.reproduction__button-nav');
