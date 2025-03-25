@@ -47,6 +47,9 @@ body{
     font-family: "Raleway", serif;
     font-weight: 500;
 }
+.lock-scroll{
+    overflow: hidden;
+}
 .mobile{
     display: none;
 }
@@ -218,12 +221,16 @@ body{
         height: 100%;
     }
     .header__popup{
+        display: none;
         position: fixed;
         top: 68px;
         left: 0px;
         background-color: rgba(0, 0, 0, 0.40);
         width: 100%;
         height: 100%;
+    }
+    .isActive{
+        display: block;
     }
     .header__popup-content{
         width: 100%;
@@ -252,12 +259,6 @@ body{
         align-items: flex-start;
         margin-left: 15px;
         row-gap: 50px;
-    }
-    .js-close__popup{
-        display: none;
-    }
-    .js-open__popup{
-        display: block;
     }
 }
 
